@@ -21,10 +21,6 @@ public class ImmutableLinkedListTest {
         assertArrayEquals(new Object[]{1, 2, 3, 4, 5, 6}, linkedlst.add(6).toArray());
     }
 
-    @Test
-    public void testAddIndex() {
-        assertArrayEquals(new Object[]{1, 2, 15, 3, 4, 5, 6}, linkedlst.add(2, 15).toArray());
-    }
 
     @Test
     public void testAddAllSimple() {
@@ -43,7 +39,7 @@ public class ImmutableLinkedListTest {
 
     @Test
     public void testGet() {
-        assertEquals(0, linkedlst.get(1));
+        assertEquals(1, linkedlst.get(0));
     }
 
     @Test
