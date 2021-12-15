@@ -9,8 +9,8 @@ public class Stack {
     }
 
     public Object pop() {
-        Object el = stack.getLast();
-        stack = stack.removeLast();
+        Object el = stack.getFirst();
+        stack = stack.removeFirst();
         return el;
     }
 

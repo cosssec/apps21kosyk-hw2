@@ -31,7 +31,10 @@ public class Node {
     }
 
     public Node getNext() {
-        return next;
+        if (this.next == null){
+            return null;}
+
+        return this.next;
     }
 
     public void setNext(Node ne) {
